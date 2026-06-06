@@ -1,0 +1,67 @@
+/* FOOTER MAIN */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 35px 8%;
+
+  background: var(--card-color);
+  color: var(--text-color);
+
+  margin-top: 60px;
+
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.06);
+}
+
+/* LEFT SIDE */
+.left h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.left p {
+  font-size: 13px;
+  color: gray;
+}
+
+/* CENTER LINKS */
+.center {
+  display: flex;
+  gap: 18px;
+}
+
+.center a {
+  text-decoration: none;
+
+  color: var(--text-color);
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.center a:hover {
+  color: #4facfe;
+}
+
+/* RIGHT SIDE */
+.right p {
+  font-size: 13px;
+  color: gray;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+
+    gap: 15px;
+  }
+
+  .center {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

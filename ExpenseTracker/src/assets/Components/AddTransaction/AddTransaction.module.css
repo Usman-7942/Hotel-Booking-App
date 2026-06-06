@@ -1,0 +1,47 @@
+.addtransaction_container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 12px;
+  color: white;
+}
+
+.addtransaction_container h2 {
+  margin-bottom: 15px;
+}
+
+/* FORM FLEX LAYOUT */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* INPUTS */
+.form input,
+.form select {
+  flex: 1 1 45%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #0f172a;
+  color: white;
+  min-width: 200px;
+}
+
+/* BUTTON */
+.form button {
+  flex:  100%;
+  padding: 12px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background: #16a34a;
+}

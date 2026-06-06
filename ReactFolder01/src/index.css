@@ -1,0 +1,23 @@
+* {
+    color: rgb(225, 225, 225);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body{
+  background-color: #111;
+}
+
+.card{
+  background-color: rgb(89, 88, 88);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.navbar{
+  background-color: rgb(34, 34, 187);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 40px;
+}

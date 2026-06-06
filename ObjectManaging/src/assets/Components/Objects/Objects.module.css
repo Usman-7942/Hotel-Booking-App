@@ -1,0 +1,108 @@
+.show_div{
+    margin: 0.4rem 0 0.4rem 20rem;
+    width: 40vw;
+    padding: 0.7rem;
+    background-color: orange;
+}
+
+.show_div h2{
+    font-size: 2rem;
+}
+.show{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    background-color: blueviolet;
+}
+
+
+
+.sort_div,
+.search_div,
+.true_div,
+.count_div,
+.nested_div,
+.sum_div,
+.toggle_div,
+.edit_div,
+.input_div{
+    margin: 0.4rem 0 0.4rem 20rem;
+    width: 40vw;
+    padding: 0.7rem;
+    background-color: orange;
+}
+
+.input_box{
+    padding: 0.4rem;
+    width: 90%;
+    outline: none;
+    border: none;
+    color: grey;
+    margin-top: 0.7rem;
+    background-color: black;
+}
+
+.input_box::placeholder{
+    color: grey;
+}
+
+
+
+.cancelbtn,
+.countincbtn,
+.updatebtn,
+.resetallbtn,
+.sumbtn,
+.togbtn,
+.addbtn{
+    margin-top: 0.7rem;
+    padding: 0.4rem;
+    width: 4vw;
+    border: none;
+    border-radius: 0.7rem;
+    color: color;
+    background-color: red;
+}
+
+
+.editbtn{
+    margin-top: 0.7rem;
+    padding: 0.4rem;
+    width: 4vw;
+    border: none;
+    border-radius: 0.7rem;
+    color: color;
+    background-color: green;
+}
+
+
+.left_side{
+    width: 90%;
+}
+
+.right_side{
+    width: 10%;
+    padding-right: 1.3rem;
+}
+
+.deletebtn{
+    color: color;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+    

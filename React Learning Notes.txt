@@ -1,0 +1,1092 @@
+App.jsx: 
+only return element and only one element
+so we wrape all the elements have and
+empty element <></> in this way we send
+all the element to be execute in the web browser
+
+
+Props:
+Parent send data to child and to grandchild
+but child and grandchild cannot send data
+back to parent or to grandparent
+in props we can send data from parent to child
+like App -> Card and also App -> Card -> Image
+App can send data to Card and Image and Card
+can send data to Image but Image cannot send data
+to Card and Card cannot send data to App 
+
+
+
+
+import React from 'react'
+
+const Card = (props) => {    
+  return (                   
+    <div>                    
+      <div className="card">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/022/336/806/small/chamomile-flower-on-pink-background-illustration-ai-generative-free-photo.jpg" alt="Profile Image"></img>
+        <h1>Ali</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, numquam.
+        </p>
+        <button>
+          View Profile
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export default Card
+
+
+
+
+
+
+import { useState } from 'react';
+import Card from './assets/Components/Card';
+import './App.css'
+
+function App() {
+
+  return (
+    <div class="parent">
+      <Card username="Ali" age={11}/>  //send numerical value with {} 
+      <Card/>
+      
+    </div>
+  )
+}
+
+export default App
+
+
+
+//props is just like the object it has username: "Ali" and age: 11
+//props is like a parameter just like we pass in the function and Card is also
+//a function we pass argument in Card call <Card username/> to accept the username
+//argument we have to pass the props as parameter in Card.jsx function definition
+//without props parameter passing the username should not be accepted
+//just like
+
+
+
+
+//Features Base Structure means making commponents structure on the bases of the Features
+//making whole nav bar a component which is a feature
+
+
+
+
+//Atomic design structure means make every thing a components
+//making home,about,logo,login everything a component
+
+
+
+
+
+
+
+
+
+
+
+
+
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+
+  function fn(ele){
+    console.log("User is typing, not definition directly", ele.target.value);
+    //console.log(ele) gives the details
+    //console.log(ele.target) gives the element
+    //console.log(ele.target.value) giving the value of the input
+  }
+  return (
+    <div>
+      <input onChange={fn} type="text" placeholder="Enter your name"/>
+      <input onChange={fn()} type="text" placeholder="Enter your name"/>
+      //if we just run the programe the function fn inside onchange={fn()}
+      //will run automatically without inputting any thing because we another
+      //calling the function 
+
+
+      <input onChange={function(ele){console.log(`User is typing directly in function definition, ${ele.target.value}`);}} type="text" placeholder="Enter your name"/>
+      //we can also type function definition inside the main function 
+      //as parameter
+
+
+      
+      
+      <input onChange={function(){`Function is called ${fn()}`}} type="text" placeholder="Enter your name"/>
+      //function definition with another function call inside of it
+      //passing to the main function as a parameter here function 
+      //call is not called untill we use the main function
+      //the function is not automatically call
+
+
+      <h1 onClick={function (){console.log("H1 is clicked")}}>H1 Heading</h1>
+      //you can type function definition where every you want and then
+      //type function name inside on the onchange={} function {}
+      //or you can also type function definition directly inside the
+      //onclicked={} function {}
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+//React change the dom for us if we want to show the change in the code
+//on the screen we have to use react to show the change on the screen
+//the change we made is made in the background but to show that changed
+//result means updated result we have to use react for that like props
+//and useState it simple rerender the UI
+
+
+
+
+//React has a copy of the DOM which is Virtual DOM when the change made
+//a new Virtual DOM is made the new Virtual DOM is compared by the old
+//previous version of the DOM old Virtual DOM and new Virtual DOM get
+//compared and get the change part and then it change the real DOM
+//during the comparision the JS calculating the DOM new and old versions
+//but after comparision the React just render the DOM that part only that
+//it get by comparising the new and old Virtual DOMs
+//the virtual DOMS are less memory consuming DOMs when older version of
+//DOM is before updating and New Virtual DOM version is after updating
+//the state after update get the part to do rerender and then React only
+//rerender that part in the real DOM
+//updating the state in new Virtual  DOM means the signal to React that 
+//the UI should be rerender in the component
+
+
+
+
+
+
+
+//Example of useState:
+
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+  
+  const [a , seta] = useState(10);
+
+  function changea(){
+    seta(30);
+  }
+
+  return (
+    <div>
+      <h1>Value of a is {a}</h1>
+      <button onClick={changea}>Click</button>
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+//Increase and decrease using useState:
+
+
+  * {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 26px;
+      font-weight: 400;
+  }
+
+  body{
+    background-color: #111;
+  }
+
+
+  h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    height: 200px;
+    width: 325px;
+    font-size: 100px;
+  }
+
+
+  button{
+    background-color: grey;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+  }
+
+
+
+
+
+  import { useState } from 'react'
+  import './App.css'
+
+  function App() {
+    
+    const [num , setnum] = useState(0);
+    
+    
+    function increasenum(){
+      setnum(num + 1);    //it run as function call
+    }
+
+    function decreasenum(){
+      setnum(num - 1);
+    }
+
+    return (
+      <div>
+        <h1>{num}</h1>
+        <button onClick={increasenum}>Increase</button>
+        <button onClick={decreasenum}>Decrease</button>
+      </div>
+    )
+  }
+
+  export default App
+
+
+
+
+
+//The console.log() shows the previous value in useState:
+
+
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+
+  const [num , setnum] = useState(0);
+    
+    
+    function increasenum(){
+      console.log(num)
+      setnum(num);    //as the setnum is running as async the values
+                      //are changed and shown in the UI but the
+                      //console.log did not show it as it running
+                      //at the background it console.log the previous
+                      //value only not the updated value
+      console.log(num)
+    }
+  
+    
+  
+
+  return (
+    <>
+    <h1>{num}</h1>
+    <button onClick={btnclicked}>Click</button>
+    </>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+
+//example of updating array using useState:
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+body{
+  background-color: #111;
+}
+
+
+
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  height: 310px;
+  width: 325px;
+  font-size: 100px;
+}
+
+
+button{
+  background-color: grey;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+
+  const [num , setnum] = useState([10,20,30]);
+    
+    
+    function btnclicked(){
+ 
+
+    //num = [11,22,33]  //we can do in this way but it 
+                        //can change the original num array
+
+
+    //so new put the shallow copy to the other new array but we do
+    //deep copy that also cahnge the original array so we use ...
+    //spread operator for shallow copy
+
+
+    let newnum = [...num];    //for array we use []
+    newnum.pop();             //we can perform the opertion on 
+                              //the array like pop
+    newnum.push(40);          //we can also push the number in
+                              //the new array which is newnum
+
+     
+    console.log(newnum);       //it show new value but in reality
+                              //it always show previous value the
+                              //new is showed due to referrence
+      setnum(newnum);    
+    console.log(newnum);       //it also shown new value but in
+                               //reality it is previous value
+                       
+    }
+  
+    
+  
+
+  return (
+    <>
+    <h1>{num} </h1>
+    <button onClick={btnclicked}>Click</button>
+    </>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+
+
+//Updating object using usState:
+  * {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 26px;
+      font-weight: 400;
+  }
+
+  body{
+    background-color: #111;
+  }
+
+
+
+  h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    height: 310px;
+    width: 325px;
+    font-size: 100px;
+  }
+
+
+  button{
+    background-color: grey;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+  }
+
+
+
+
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+
+  const [num , setnum] = useState({username: "Umer", age: 22});
+    
+    
+    function btnclicked(){
+ 
+
+    //  num.username = "Khizer";  //we can do in this way but it 
+    //  num.age = 24;             //can cahnge the original num object
+
+
+    //so new put the shallow copy to the other new object but we do
+    //deep copy that also cahnge the original object so we use ...
+    //spread operator for shallow copy
+
+
+    let newnum = {...num};       //for objects we use {}
+    newnum.username = "Khizer";
+    newnum.age = 24;
+     
+    console.log(newnum);    //it show new value but in reality
+                              //it always show previous value the
+                              //new is showed due to referrence
+      setnum(newnum);    
+    console.log(newnum);     //it also shown new value but in
+                               //reality it is previous value
+                       
+    }
+  
+    
+  
+
+  return (
+    <>
+    <h1>{num.username}  {num.age}</h1>
+    <button onClick={btnclicked}>Click</button>
+    </>
+  )
+  }
+
+  export default App
+
+
+
+
+
+
+
+
+
+
+//Updating the object using previous variable in useState:
+
+
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+body{
+  background-color: #111;
+}
+
+
+
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  height: 310px;
+  width: 325px;
+  font-size: 100px;
+}
+
+
+button{
+  background-color: grey;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+
+
+
+
+
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+
+  const [num , setnum] = useState({username: "Umer", age: 22 });
+    
+    
+    function btnclicked(){
+ 
+      setnum(prev => ({...prev, age:50 }))
+    }
+  
+    
+  
+
+  return (
+    <>
+    <h1>{num.username}  {num.age} </h1>
+    <button onClick={btnclicked}>Click</button>
+    </>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+//Example of batch update means using set function from the useState multiple times:
+
+
+  
+
+  import { useState } from 'react'
+  import './App.css'
+
+  function App() {
+
+  const [num , setnum] = useState(0);
+    
+    
+    function btnclicked(){
+ 
+      // setnum(num + 1);   
+      // setnum(num + 1);
+      // setnum(num + 1);
+
+      
+      // React waits… it doesn’t update instantly.
+      // It schedules the update for later. in useState
+      //the state do not update immediately so it
+      //feel like async
+
+
+      //Batching = React groups multiple state updates into ONE render
+
+
+      //the function in React are async + batch so
+      //all the setnum(num + 1) use num previous value which is
+      //num = 0 and used in all setnum() function
+      //previous will work no matter it is simple function or
+      //the arrow function
+      // setnum(function(prev) {
+      // return prev + 1;
+      // });
+
+      setnum(prev => (prev + 1));
+      setnum(prev => (prev + 1));
+      setnum(prev => (prev + 1));
+    }
+  
+    
+  
+
+  return (
+    <>
+    <h1>{num}  </h1>
+    <button onClick={btnclicked}>Click</button>
+    </>
+  )
+  }
+
+  export default App
+
+
+
+
+
+
+
+
+
+
+//Two way data binding in form handling:
+
+
+//which means the data and the UI are in sync
+//changing the input in UI change the data
+//and changing the data change the UI
+
+
+
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+
+
+  const [title, settitle] = useState("")
+  const submithandler = (dets) => {
+    dets.preventDefault();
+    console.log("Form Submitted", title);
+    //here we get the title which is updated
+    //but the title has previous value of settile
+    //title has the current value when we type
+    //the settitle now has updated and that
+    //value is also the current value value
+    //first current value is empty and now it is 
+    //the value we typed in the input box which
+    //we seeing in the input box
+    //so therefore the title has settitle value
+    //first title has empty when we type
+    //due to settitle is inside the onChange the
+    //setttitle get value from typing and from
+    //empty the current value is also the value
+    //that we have now in the setttile or the same
+    //value we have in the input
+
+
+    //in simple we have type something in the input box
+    //setttile get value from the input box and title
+    //holds the current value which is now the value we
+    //have in the input box
+
+  }
+
+  return (
+    <div>
+      <form onSubmit={(dets) => {
+        submithandler(dets);
+      }}>
+      
+
+       //by typing we are prefromming the onChange function which
+      //changing the settitle and the subtittle change the title 
+
+
+      <input type="text"
+      value={title}
+      onChange={(dets) =>{
+        settitle(dets.target.value);
+      }}
+      placeholder="Enter your name"/>
+
+
+      <button>Submit</button>      
+      </form>
+      
+    </div>
+  )
+  }
+
+  export default App
+
+
+
+
+
+
+
+
+
+
+
+//useEffect Mounting:
+
+  //using dependencies array even it is empty will
+  //run the useEffect one time it is called Mounting
+
+
+  //if we pass any state in useEffect then it is
+  //called updating
+
+
+  //if we do not use dependencies array in the useEffect
+  //then it is called re-rendering
+
+  
+
+  //when the main React running and complete the
+  //the useEffect run side and side after that
+
+
+  //when the React main complete its execution the
+  //the useEffect is running in the console.log()
+  //will running and also when the State change when
+  //we click the button the useEffect run everytimes
+  //when ever te state change
+  //and this is called useEffect Mounting
+
+
+  import { useState } from 'react'
+  import { useEffect } from 'react'
+  import './App.css'
+
+  function App() {
+  const [num, setnum] = useState(0);
+
+
+  useEffect( function(){
+      console.log("useEffect is running...");
+  })
+
+
+
+
+  //it is not the best way or wrong way to not
+  //use the dependencies array in the useEffect
+  //here we do not pass the dependencies array
+  //even it is empty we have to use it like this
+  //useEffect( function(){
+  //    console.log("useEffect is running...");
+  //},[])
+
+
+
+
+  return (
+    <div>
+        <h1>{num}</h1>
+        <button onClick={() => {
+          setnum(num + 1);
+        }}>Click</button>
+    </div>
+  )
+  }
+
+  export default App
+
+
+
+
+
+
+
+
+//Passing dependencies array in useEffect:
+  
+
+  //when we pass dependencies array the useEffect
+  //function will run one time the program start
+  //and when we change the state by clciking the
+  //button the useEffect will not run
+
+
+
+
+  import { useState } from 'react'
+  import { useEffect } from 'react'
+  import './App.css'
+
+  function App() {
+  const [num, setnum] = useState(0);
+
+
+  useEffect( function(){
+      console.log("useEffect is running...");
+  },[])
+
+  return (
+    <div>
+        <h1>{num}</h1>
+        <button onClick={() => {
+          setnum(num + 1);
+        }}>Click</button>
+    </div>
+  )
+  }
+
+  export default App
+
+
+
+
+
+
+//Dependencies use in the useEffect:
+
+
+  //When we use the num useState in the
+  //useEffect dependencies then the useState
+  //changes only when the useState num changes
+
+
+  //here we use the two states when the
+  //num2 state change the useEffect do
+  //not change but when we change the
+  //num state then the useEffect changes
+  //because we use num in the dependencies
+  //in the useEffect function and the
+  //console.log() will run when the num
+  //change its state and the useEffect
+  //also changes by clicking the num button
+
+
+
+
+  //and if we use num and num2 both in the
+  //dependencies of useEffect then the useEffect
+  //will run on chnaging in both states like this
+  
+
+
+
+
+
+
+  import { useState } from 'react'
+  import { useEffect } from 'react'
+  import './App.css'
+
+  function App() {
+  const [num, setnum] = useState(0);
+  const [num2, setnum2] = useState(10);
+
+
+  useEffect( function(){
+      console.log("useEffect is running...");
+  },[num])
+
+  return (
+    <div>
+        <h1>Num {num}</h1>
+        <h1>Num2 {num2}</h1>
+        <button onClick={() => {
+          setnum(num + 1);
+        }}
+        >Click Num</button>
+         <button onClick={() => {
+          setnum2(num2 + 1);
+        }}
+        >Click Num2</button>
+    </div>
+  )
+  }
+
+  export default App
+
+
+
+
+
+
+
+
+//Browser Router:
+//it just make routs means path in the App in the
+//browser and it is client base router
+
+//yt.com = /
+//yt.com/home = /home
+//or yt.com/about = /about
+
+
+//Hash router:
+//just add  /#  before routing like this:
+/yt.com = /#/
+//yt.com/home = /#/home
+//or yt.com/about = /#/about
+
+
+
+//Hash is ignored by the server but handled by the frontend router.
+//Server ignores #, browser uses #
+
+
+
+
+
+
+
+
+
+
+
+//Using Routes and Route:
+//Routes is the container
+//Route make path for the elements
+//only difference of s
+
+
+
+import { useState } from 'react'
+import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
+function App() {
+
+  return (
+   <div>
+
+    <h2>This is a Navbar</h2>
+     <Routes>   //Only things in the Routes tag change other do not changes
+      <Route path='/' element={<Home/>}  />
+      <Route path='/about' element={<About/>}  />
+      <Route path='/contact' element={<Contact/>}  />
+     
+    </Routes>
+
+    <h4>This is a Footer</h4>
+   </div>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+//Example of React change pages inside of it
+//by which we call it single page website:
+
+
+
+  * {
+      color: grey;
+      font-family: 'Poppins', sans-serif;
+      font-size: 31px;
+      font-weight: 400;
+  }
+
+  body{
+    background-color: #111;
+  }
+
+
+  /* Navbar container */
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* left + right */
+    align-items: center;
+    padding: 15px 40px;
+    background-color: black;
+  }
+
+  /* Left side */
+  .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  /* Right side links */
+  .nav-links {
+    display: flex;
+    gap: 25px; /* space between links */
+  }
+
+  /* Links styling */
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav-links a:hover {
+    color: orange;
+  }
+
+
+
+
+
+//when we click the Home , About and Contact
+//the content changed
+
+
+  import { useState } from 'react'
+  import './App.css'
+  import { Route, Routes } from 'react-router-dom'
+  import Home from './Pages/Home'
+  import About from './Pages/About'
+  import Contact from './Pages/Contact'
+  function App() {
+
+  return (
+   <div>
+
+    <nav className="navbar">
+      <div>Website</div>
+      <div className="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </nav>
+     <Routes>   //Only things in the Routes tag change other do not changes
+      <Route path='/' element={<Home/>}  />
+      <Route path='/about' element={<About/>}  />
+      <Route path='/contact' element={<Contact/>}  />
+     
+    </Routes>
+
+    <h4>This is a Footer</h4>
+   </div>
+  )
+  }
+
+  export default App
+
+
+
+
+
+  //Basic Setup
+  //Nested Routes
+  //Dynamic Routes
+  //usenavigate
+  //404 page
+
+
+
+
+
+
+//Context Apis:
+  //Create content
+  //Provide the Data
+  //Use the Data

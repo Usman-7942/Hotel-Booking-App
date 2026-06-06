@@ -1,0 +1,70 @@
+.container{
+    height: 400px;
+    width: 510px;
+    background-color: rgb(202, 39, 39);
+}
+
+.image_div{
+    position: relative;
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.image_div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider_div{
+    position: absolute;
+    display: flex;
+    gap: 4px;
+    left: 0;
+    bottom: 10px;
+    height: 40px;
+    width: max-content;
+    overflow: hidden;
+    border: 2px solid rgb(191, 183, 183);
+    transition: transform 0.4s ease;    
+}
+
+
+.image_preview{
+    height: 100%;
+    width: 33.33%;
+    border-radius: 4px;
+    opacity: 0.7;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.image_preview.active {
+  opacity: 1;
+  border: 2px solid white;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+.btns button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+}
+

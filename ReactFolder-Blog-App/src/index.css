@@ -1,0 +1,232 @@
+* {
+  color: #d1d5db; /* light grey for dark theme */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #0b0f19,
+    #111827,
+    #1e293b
+  );
+}
+
+
+
+
+
+.container {
+  width: 600px;
+  height: 440px;
+  border: 2px solid #1f2937; /* soft dark border */
+  border-radius: 10px;
+  background-color: #111827; /* card dark background */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.header {
+  margin: 10px;
+  color: #f3f4f6;
+}
+
+.readmore_btn{
+  color: #f3f4f6;
+  border: none;
+  background-color: #111827;
+}
+
+
+
+
+
+h2, p {
+  font-size: 17px;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+
+
+
+
+p {
+  font-size: 20px;
+  color: #b8b9ba;
+}
+
+
+
+
+
+.input_div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 60px;
+  max-height: 81px;
+}
+
+
+
+
+
+.search_row {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+.input_box {
+  padding: 10px;
+  width: 310px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  outline: none;
+}
+
+
+
+
+.input_box::placeholder {
+  color: #64748b;
+}
+
+
+b{
+  font-size: 17px;
+}
+
+
+.search_btn {
+  color: white;
+  border: none;
+  border-radius: 6px;
+  background-color: #ef4444;
+  cursor: pointer;
+}
+
+
+
+
+.search_btn:hover {
+  background-color: #dc2626;
+}
+
+
+
+
+h4 {
+  color: #ef4444;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+
+
+
+.inv_btn {
+  margin-left: 51px;
+}
+
+
+
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f1f5f9;
+  font-size: 14px;   
+  padding: 4px;
+  margin: 0 40px;
+}
+
+
+
+
+
+.result div {
+  font-size: 13px;
+  color: #e2e8f0;
+}
+
+
+
+
+.readmore_btn:hover{
+  color: yellow;
+}
+
+
+
+/* Container */
+.form-container {
+  width: 350px;
+  margin: 60px auto;
+  padding: 25px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+/* Inputs */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: #2c2c2c;
+  color: white;
+  font-size: 14px;
+}
+
+/* Textarea */
+.form-container textarea {
+  height: 80px;
+  resize: none;
+}
+
+/* Buttons */
+.form-container button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Add button */
+.form-container button:first-of-type {
+  background: #4caf50;
+  color: white;
+}
+
+/* Back button */
+.form-container button:last-of-type {
+  background: #f44336;
+  color: white;
+}
+
+/* Hover */
+.form-container button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}

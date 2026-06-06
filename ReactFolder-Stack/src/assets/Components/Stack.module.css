@@ -1,0 +1,28 @@
+.container_stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.stackItems {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+}
+
+.box {
+  width: 100px;
+  padding: 10px;
+  background: blue;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.pushbtn,
+.popbtn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: green;
+  border: none;
+}

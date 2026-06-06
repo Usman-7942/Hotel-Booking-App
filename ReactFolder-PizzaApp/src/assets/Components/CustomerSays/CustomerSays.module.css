@@ -1,0 +1,172 @@
+.heading_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 17vh;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 31px;
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    color: white;
+}
+
+.heading_box p{
+    font-size: 24px;
+    color: white;
+}
+
+.heading_box span{
+    font-size: 53px;
+    color: #f5a623;
+}
+
+
+.container_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    padding: 15px 0;
+    background: #f4f7fb;
+}
+
+
+.tasty_box{
+    height: 90%;
+    width: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: all 0.3s ease;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+}
+
+.tasty_box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 6px 25px rgba(0,0,0,0.25);
+}
+
+
+
+.delivery_box{
+    height: 90%;
+    width: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+}
+
+.delivery_box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 6px 25px rgba(0,0,0,0.25);
+}
+
+
+
+.goodprice_box{
+    height: 90%;
+    width: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.15); 
+}
+
+.goodprice_box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 6px 25px rgba(0,0,0,0.25);
+}
+
+
+
+.box_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    background: linear-gradient(to right, #ff512f, #f09819);
+    color: white;
+}
+
+.box_heading p{
+    font-size: 20px;
+    color: white;
+}
+
+
+.box_main{
+    padding: 17px 20px;
+}
+
+.box_main p{
+    font-size: 20px;
+    color: #2C3E50;
+}
+
+
+
+
+.user_info{
+    height: 13vh;
+    width: 100%;
+    margin-top: 4.2vh;
+    font-size: 22px;
+    background: transparent;
+}
+
+
+
+.location_div,
+.infoname_div{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    gap: 7px;
+    font-size: 22px;
+    background: transparent;
+    color: #2C3E50;
+}
+
+.location_text p,
+.infoname_text p{
+    color: #2C3E50;
+}
+
+
+
+.location_image,
+.infoname_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 13%;
+    border-radius: 6px;
+}
+
+
+
+
+.box_rating{
+    margin-top: 7vh;
+}
+
+.box_rating p{
+    font-size: 20px;
+    padding-left: 17px;
+    color: #ff512f;
+    font-weight: 600;
+}
+
+
+
+.box_rating span{
+    font-size: 20px;
+    margin-top: 13vh;
+    margin-left: 1.1vw;
+}

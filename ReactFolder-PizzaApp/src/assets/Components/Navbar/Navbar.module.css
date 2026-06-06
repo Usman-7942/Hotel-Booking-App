@@ -1,0 +1,99 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    padding-bottom: 22px;
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+}
+
+/* LOGO */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+    width: 47px;
+    font-size: 20px;
+    margin-top: 2.6vh;
+    margin-left: 2vw;
+    padding: 4px;
+    transform: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    padding: 0 7px;
+    border-radius: 11px;
+}
+
+/* NAV BUTTONS */
+.btns{
+    display: flex;
+    gap: 35px;
+    margin-left: 7vw;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31px;
+    width: 80px;
+    margin-bottom:15px;
+    font-size: 20px;
+    gap: 7px;
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+/* HOVER - CLEAN PROFESSIONAL STYLE */
+.btn:hover{
+    padding: 20px 11px;
+    width: 150px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* LOGIN / CART */
+.logindiv{
+    display: flex;
+    align-items: center;
+}
+
+.cart, .login{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 17px;
+    margin-right: 2vw;
+    margin-bottom: 20px;
+    transform: all 0.3s ease;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+/* HOVER */
+.cart:hover,.login:hover{
+    transform: scale(1.1);
+    padding: 4px 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* ICONS */
+.cart svg,
+.login svg{
+    font-size: 20px;
+    color: white;
+}
+
+.btn svg{
+    font-size: 26px;
+    color: white;
+}

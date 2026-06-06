@@ -1,0 +1,152 @@
+* {
+  color: #d1d5db; /* light grey for dark theme */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #0b0f19,
+    #111827,
+    #1e293b
+  );
+}
+
+
+
+
+.container {
+  width: 600px;
+  height: 440px;
+  border: 2px solid #1f2937; /* soft dark border */
+  border-radius: 10px;
+  background-color: #111827; /* card dark background */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.header {
+  margin: -20px;
+  color: #f3f4f6;
+}
+
+
+
+
+
+h2, p {
+  text-align: center;
+  color: #e5e7eb;
+}
+
+
+
+
+
+p {
+  font-size: 35px;
+  color: #f9fafb;
+}
+
+
+
+
+
+.input_div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 60px;
+  max-height: 81px;
+}
+
+
+
+
+
+.search_row {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+.input_box {
+  padding: 10px;
+  width: 310px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  outline: none;
+}
+
+
+
+
+.input_box::placeholder {
+  color: #64748b;
+}
+
+
+
+
+
+.search_btn {
+  color: white;
+  border: none;
+  border-radius: 6px;
+  background-color: #ef4444;
+  cursor: pointer;
+}
+
+
+
+
+.search_btn:hover {
+  background-color: #dc2626;
+}
+
+
+
+
+h4 {
+  color: #ef4444;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+
+
+
+.inv_btn {
+  display: none;
+  margin-left: 51px;
+}
+
+
+
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 31px;
+  color: #f1f5f9;
+}
+
+
+
+
+.result div {
+  font-size: 31px;
+  color: #e2e8f0;
+}

@@ -1,0 +1,79 @@
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 31px;
+    font-weight: 400;
+}
+
+body{
+  background-color: #111;
+}
+
+
+button{
+  color: white;
+  background-color: grey;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 40px;
+  background-color: rgb(2, 100, 118);
+}
+
+
+.return_btn{
+  margin: 20px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(3, 85, 2);
+}
+
+.light{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+  padding: 11px 20px;
+  background-color: rgb(2, 100, 118);
+}
+
+
+.dark{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+  padding: 11px 20px;
+  background-color: black;
+}
+
+
+
+/* Left side */
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Right side links */
+.nav-links {
+  display: flex;
+  gap: 25px; /* space between links */
+}
+
+/* Links styling */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: orange;
+}

@@ -1,0 +1,283 @@
+.container_section{
+    min-height: 90vh;
+    width: 100%;
+    background-color: white;
+    border-bottom: 0.05rem solid rgb(202, 189, 189);
+}
+
+/* HEADING */
+.heading_bar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: black;
+    height: 20vh;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-bottom: 7vh;
+}
+
+.heading_bar p:hover{
+    padding: 7px;
+    border-radius: 7px;
+    color: white;
+    background-color: black;
+}
+
+/* MAIN CONTAINER */
+.divs_container{
+    display: flex;
+    flex-wrap: wrap; /* 🔥 IMPORTANT */
+    gap: 3vw;
+    padding: 0 5vw;
+}
+
+
+
+/* LEFT CARD */
+.left_div{
+    flex: 1 1 250px; /* 🔥 responsive */
+    max-width: 30%;
+    min-height: 55vh;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.3rem 0.8rem rgba(0,0,0,0.2);
+}
+
+.left_div:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,1.1);
+}
+
+.left_image{
+    height: 65%;
+    transition: all 0.3s ease;
+}
+
+.left_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.left_image:hover{
+    border-radius: 4px;
+    transform: scale(1.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,1.1);
+}
+
+.lefttext_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.text_heading{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.text_para{
+    font-size: 0.9rem;
+    color: black;
+}
+
+/* MIDDLE + RIGHT */
+.middle_div,
+.right_div{
+    flex: 1 1 250px;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
+   
+
+
+
+/* CARDS */
+.middletop_div,
+.middlebottom_div,
+.righttop_div,
+.rightbottom_div{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    border-radius: 0.6rem;
+    padding: 1vh;
+    color: black;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0.4rem rgba(0,0,0,0.1);
+}
+
+
+.middletop_div:hover,
+.middlebottom_div:hover,
+.righttop_div:hover,
+.rightbottom_div:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,1.1);
+}
+
+/* PROFILE */
+.profile_div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile_image{
+    position: relative;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    border: 0.05rem solid #ccc;
+}
+
+.profile_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.premium_image{
+    position: absolute;
+    bottom: -0.5vh;
+    right: -0.5vh;
+    height: 2.5vh;
+    width: 2.5vh;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.premium_image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* TEXT */
+.companyname{
+    font-weight: bold;
+}
+
+.companyname_text{
+    font-size: 0.7rem;
+    color: grey;
+}
+
+/* PRODUCT IMAGES */
+.middletop_images,
+.middlebottom_images,
+.righttop_images,
+.rightbottom_images{
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+/* SMALL CARDS */
+.middletop_leftimage,
+.middlebottom_leftimage,
+.righttop_leftimage,
+.rightbottom_leftimage{
+    width: 5vw;
+    min-width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middletop_leftimage img,
+.middlebottom_leftimage img,
+.righttop_leftimage img,
+.rightbottom_leftimage img{
+    width: 100%;
+    height: auto;
+}
+
+/* BG IMAGE SECTION */
+.bgimage_divcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.bgimage_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    font-size: 4vw;
+    color: white;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("clothes.jpg");
+    background-size: cover;
+}
+
+/* FOOTER INFO */
+.info_div{
+    display: flex;
+    flex-wrap: wrap; /* 🔥 important */
+    gap: 3vw;
+    padding: 5vh 5vw;
+    background-color: rgb(4, 4, 90);
+}
+
+/* SOCIAL */
+.socialmedia_div{
+    flex: 1 1 250px;
+}
+
+.socialmedia_div img{
+    width: 100%;
+}
+
+.socialmedia_btns{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.socialmedia_btn{
+    height: 3vh;
+    width: 3vh;
+    background-color: white;
+}
+
+/* LISTS */
+.info_list,
+.buy_btn,
+.sell_btn,
+.guide_btn{
+    flex: 1 1 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infolist_text{
+    color: grey;
+}
+
+.infolist_texts{
+    color: white;
+    font-size: 0.8rem;
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    background-color: rgb(4, 4, 90);
+}
+
+.footer p{
+    color: rgb(200, 193, 193);
+}

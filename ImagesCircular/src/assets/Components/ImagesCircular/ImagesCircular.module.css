@@ -1,0 +1,85 @@
+.maincontainer{
+    position: relative;
+    height: 60vh;
+    width: 40vw;
+    margin: auto;
+    margin-top: 4%;
+    background-color: red;
+}
+
+
+.prevbtn{
+    position: absolute;
+    height: 1.3rem;
+    width: 1.3rem;
+    top: 40%;
+    left: 2rem;
+    color: grey;
+    border: 1px solid grey;
+    background-color: orange;
+    z-index: 2;
+}
+
+
+
+
+
+.nextbtn{
+    position: absolute;
+    height: 1.3rem;
+    width: 1.3rem;
+    top: 40%;
+    right: 2rem;
+    color: grey;
+    border: 1px solid grey;
+    background-color: orange;
+    z-index: 2;
+}
+
+
+.maincontainer .mainimages{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.details{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 4vh;
+    width: 96.2%;
+    top: 4px;
+    gap: 1.5rem;
+    padding-left: 1.3rem;
+    background-color: red;
+}
+
+
+.wrapper{
+    position: absolute;
+    left: 7px;
+    bottom: 40px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    gap: 1.3rem;
+    background: rgba(0,0,0,0.20);
+}
+
+.imagepreviewer{
+    height: 90%;
+    width: 7vw;
+    border: none;
+    border-radius: 7px;
+}
+
+.imagepreviewer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

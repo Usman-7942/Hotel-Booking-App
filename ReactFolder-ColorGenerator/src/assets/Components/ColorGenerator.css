@@ -1,0 +1,49 @@
+.container{
+    margin-top: 100px;
+    margin-left: 400px;
+    height: 60vh;
+    width: 40vw;
+    background-color: rgb(202, 98, 60);
+}
+
+
+h2{
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+    border-bottom: 2px solid blue;
+}
+
+
+.generate_btn{
+    color: white;
+    padding: 7px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 7px;
+    background-color: rgb(26, 104, 130);
+}
+
+
+
+.colors_div{
+    display: flex;
+    gap: 20px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.color{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 60px;
+    border-radius: 4px;
+}
+
+.color > p{
+    margin-top: 75px; 
+}

@@ -1,0 +1,15 @@
+.dashboard {
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

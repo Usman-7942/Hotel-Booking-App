@@ -1,0 +1,326 @@
+.heading_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+    width: 100%;
+    font-size: 15px;
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    color: white;
+}
+
+.heading_container p{
+    font-size: 28px;
+    color: white;
+}
+
+.heading_container span{
+    font-size: 35px;
+    color: white;
+}
+
+
+
+.btns_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    background-color: #f8f9fb;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    width: 150px;
+    color: #2C3E50;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgba(44, 62, 80, 0.08);
+    border: 1px solid rgba(44, 62, 80, 0.15);
+    transition: all 0.3s ease;
+}
+
+.btns:hover{
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+.card_wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f9fb;
+}
+
+.card_section{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding-left:1.7vw;
+    height: 90%;
+    width: 100%;
+}
+
+
+.next_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 8vw;
+    top: 47%;
+    transform: translateY(-50%);
+    height: 51px;
+    width: 51px;
+    font-size: 26px;
+    z-index: 100;
+    border: 2px solid rgba(44, 62, 80, 0.25);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+    color: #2C3E50;
+}
+
+
+
+.prev_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 4vw;
+    top: 47%;
+    transform: translateY(-50%);
+    height: 51px;
+    width: 51px;
+    font-size: 26px;
+    z-index: 100;
+    border: 2px solid rgba(44, 62, 80, 0.25);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+    color: #2C3E50;
+}
+
+.card{
+    height: 100%;
+    width: 20vw;
+    border: none;
+    overflow: hidden;
+    border-radius: 11px;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 12px rgba(44,62,80,0.25);
+}
+
+
+.card_image{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+}
+
+.card_image:hover{
+    transform: scale(0.8);
+    box-shadow: 0px 2px 15px rgba(44,62,80,0.3);
+}
+
+.card_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* ✅ ONLY ADDED COLORS HERE */
+.card_name p{
+    color: #2C3E50;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card_rating p{
+    color: #ff512f;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.card_price p{
+    color: #1f2d3d;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+.cardinfo_div{
+    height: 50%;
+    width: 100%;
+}
+
+.card_name, .card_rating,
+.card_price
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.1rem;
+    height: 20%;
+    width: 100%;
+    color: #2C3E50;
+}
+
+.addtocart_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+
+.moredetails_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+}
+
+.addtocart_btn{
+    height: 100%;
+    width: 90%;
+    font-size: 17px;
+    border: none;
+    margin: 0;
+    border-radius: 4px;
+    background: linear-gradient(to right, #ff512f, #f09819);
+    color: white;
+}
+
+.moredetails_btn{
+    height: 100%;
+    width: 90%;
+    font-size: 17px;
+    border: none;
+    margin: 0;
+    border-radius: 4px;
+    background: rgba(44, 62, 80, 0.15);
+    color: #2C3E50;
+}
+
+.addtocart_btn:hover{
+    background: linear-gradient(to right, #ff6a4d, #f5a623);
+    cursor: pointer;
+}
+
+
+.moredetails_btn:hover{
+    background: #2C3E50;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.confirm_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 100%;   /* IMPORTANT: fills addtocart_div */
+
+  padding: 0 15px;
+  margin-top: 0;
+
+  border-radius: 10px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+
+  gap: 15px;
+}
+
+
+
+.confirm_box div{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+
+.confirm_box p{
+  margin: 0;
+  white-space: nowrap;
+}
+
+
+
+.yes_btn,
+.no_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 34px;
+  min-width: 60px;
+
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 31px;
+  color: white;
+}
+
+
+.yes_btn{
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  box-shadow: 0px 3px 10px rgba(46, 204, 113, 0.3);
+}
+
+.yes_btn:hover{
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+}
+
+.cart_msg{
+  color: #2ecc71;
+  font-size: 14px;
+  margin-top: 5px;
+}

@@ -1,0 +1,134 @@
+.cart_page{
+    padding: 30px;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+.title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 7px 0;
+    border-radius: 31px;
+    margin-bottom: 60px;
+    background: linear-gradient(to right, #ff512f, #f09819);
+}
+
+/* MAIN LAYOUT */
+.cart_container{
+    display: flex;
+    gap: 30px;
+}
+
+/* LEFT SIDE */
+.items_section{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart_item{
+    display: flex;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.cart_item img{
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.item_info p{
+    color: #ff512f;
+}
+
+
+.item_info h3{
+    margin: 0;
+    color: #2C3E50;
+}
+
+.qty_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.qty_box button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #ff512f;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.qty_box span{
+    color: #ff512f;
+}
+
+/* RIGHT SIDE */
+.bill_section{
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.bill_section p,
+.bill_section h2{
+    color: #2C3E50;
+}
+
+.checkout_btn{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(to right, #ff512f, #f09819);
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
+.remove_btn{
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    background: #e74c3c;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove_btn:hover{
+    background: #c0392b;
+}
+
+.empty{
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+}

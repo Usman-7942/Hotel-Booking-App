@@ -1,0 +1,95 @@
+.auth_page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, #ff512f, #f09819);
+}
+
+/* GLASS EFFECT */
+.glass_card{
+    width: 320px;
+    padding: 30px;
+
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.15);
+
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.2);
+
+    text-align: center;
+    color: white;
+}
+
+.glass_card h2{
+    margin-bottom: 20px;
+}
+
+/* ✅ GROUP INPUT + ERROR */
+.input_group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* IMPORTANT for left alignment */
+    margin-bottom: 12px;
+}
+
+/* INPUT */
+.input_group input{
+    width: 100%;
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* PLACEHOLDER COLOR */
+.input_group input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+/* ERROR TEXT */
+.error{
+    font-size: 12px;
+    color: #ff4d4f;
+    margin-top: 4px;
+    padding-left: 2px;
+}
+
+/* ERROR INPUT BORDER */
+.input_group input.error_input{
+    border: 1px solid #ff4d4f;
+}
+
+/* BUTTON */
+.glass_card button{
+    width: 100%;
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: white;
+    color: #ff512f;
+    font-weight: bold;
+
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* BUTTON HOVER */
+.glass_card button:hover{
+    opacity: 0.9;
+}
+
+/* LINK TEXT */
+.glass_card p{
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}

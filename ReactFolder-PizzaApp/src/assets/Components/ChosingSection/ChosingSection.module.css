@@ -1,0 +1,101 @@
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 17vh;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 31px;
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+}
+
+
+
+.heading p{
+    font-size: 24px;
+    color: white;
+}
+
+
+
+.heading span{
+    font-size: 53px;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 51vh;
+    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    background-color: #f8f9fb;
+}
+
+
+
+.div3,.div4{
+    margin-top: 31px;
+}
+
+
+.div2, .div4{
+    margin-left: 170px;
+}
+
+.div1, .div3{
+    margin-left: 130px;
+}
+
+
+.div1,.div2,
+.div3,.div4{
+    height: 35%;
+    width: 35%;
+    border: 2px solid rgba(44, 62, 80, 0.15);
+    padding-top: 11px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    background-color: white;
+    transform: all 0.3s ease; 
+}
+
+
+
+.div1:hover,.div2:hover,
+.div3:hover,.div4:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 12px rgba(44,62,80,0.25);   
+}
+
+
+
+.div3 h2,.div4 h2,
+.div1 h2,.div2 h2
+{
+    color: #2C3E50;
+    font-size: 26px;
+    padding: 7px 15px;
+}
+
+
+
+.div1 p, .div2 p,
+.div3 p,.div4 p
+{  
+    color: #5a6b7b;
+    padding-left: 15px;
+    font-size: 17px;
+}
+
+
+.div4 span,
+.div3 span,
+.div2 span,
+.div1 span{
+    padding-left: 15px;
+    font-size: 31px;
+    color: #4CA1AF;
+}

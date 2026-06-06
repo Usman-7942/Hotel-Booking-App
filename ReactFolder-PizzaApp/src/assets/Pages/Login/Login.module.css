@@ -1,0 +1,66 @@
+.auth_page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, #ff512f, #f09819);
+}
+
+/* GLASS EFFECT */
+.glass_card{
+    width: 320px;
+    padding: 30px;
+
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.15);
+
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.2);
+
+    text-align: center;
+    color: white;
+}
+
+.glass_card h2{
+    margin-bottom: 20px;
+}
+
+.glass_card input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    /* ✅ IMPORTANT FIX */
+    color: #111;
+    font-weight: 500;
+    background: rgba(255,255,255,0.9);
+}
+
+.glass_card input::placeholder{
+    color: #555;
+}
+
+.glass_card button{
+    width: 100%;
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: white;
+    color: #ff512f;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.glass_card p{
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}

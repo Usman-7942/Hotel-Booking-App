@@ -1,0 +1,19 @@
+.analytics_container {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.charts {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chart_box {
+  flex: 1;
+  min-width: 300px;
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+}

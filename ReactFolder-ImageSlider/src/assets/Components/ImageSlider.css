@@ -1,0 +1,43 @@
+.container{
+    height: 400px;
+    width: 470px;
+    margin-top: 100px;
+    margin-left: 440px;
+    overflow: hidden;
+    background-color: orange;   
+}
+
+.image_slider{
+    height: 60%;
+    width: 100%;
+    background-color: blue;
+    display: block;
+}
+
+
+
+.prev_btn,
+.next_btn{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 85px ;
+}
+
+.btns button{
+    color: white;
+    padding: 10px 20px;
+    background-color: brown;
+    border: none;
+    border-radius: 4px;
+}
+
+.btns button:active{
+    background-color: blue;
+}

@@ -1,0 +1,44 @@
+.hero {
+  min-height: 70vh; /* was calc(100vh - 80px) */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 8%; /* was 60px 8% */
+  gap: 30px; /* was 50px */
+}
+
+/* LEFT SIDE */
+
+.heroLeft h1 {
+  font-size: 2.8rem; /* was 3.5rem */
+  margin-bottom: 15px;
+}
+
+.heroLeft h2 {
+  font-size: 4rem; /* was 5rem */
+  margin-bottom: 8px;
+}
+
+.heroLeft p {
+  font-size: 1.1rem; /* was 1.3rem */
+  margin-bottom: 20px;
+}
+
+/* SEARCH */
+
+.heroSearch input {
+  width: 260px;
+  padding: 12px;
+}
+
+.heroSearch button {
+  padding: 12px 20px;
+}
+
+/* RIGHT SIDE */
+
+.heroRight img {
+  max-width: 380px; /* was 500px */
+}

@@ -1,0 +1,165 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 44vw;
+    margin-top: 0;
+    margin-left: 40rem;
+    background-color: whitesmoke;
+}
+
+.heading{
+    margin: 0 auto;
+    padding-top: 0.7rem;
+    width: 11vw;
+    font-size: 31px;
+    color: black;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+
+.add_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 13vh;
+    width: 100%;
+    margin-top: 0.7rem;
+    background-color: blueviolet;
+}
+
+.inputbox{
+    height: 40%;
+    width: 56%;
+    color: black;
+    border: none;
+    padding: 0.4rem 1.3rem;
+    font-size: 17px;
+    border-radius: 25px;   
+}
+
+.inputbox::placeholder{
+    color: black;
+}
+
+
+.addbtn{
+    color: white;
+    border: none;
+    font-size: 17px;
+    padding: 0.4rem 0.7rem ;
+    border-radius: 0.4rem;
+    background-color: rgb(219, 18, 18);
+}
+
+.task_div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.task_box{
+    display: flex;
+    height: 15%;
+    width: 90%;
+    margin: 0.4rem 1.5rem;
+    background-color: blueviolet;
+}
+
+.task_upper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    gap: 0.4rem;
+}
+
+
+.checkbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-left: 0.4rem;
+    border: 2px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+
+
+
+.checkbtn:checked::before{
+    content: "✔";
+    color: white;
+    font-size: 12px;
+}
+
+
+
+.delete_div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+.deletebtn{
+    color: white;
+    border: none;
+    font-size: 17px;
+    padding: 0.4rem 0.7rem ;
+    margin-right: 1.5rem;
+    border-radius: 0.4rem;
+    background-color: rgb(219, 18, 18);
+
+}
+
+
+.original_show{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    width: 44vw;
+    padding-left: 0.7rem;
+    background-color: whitesmoke;
+}
+
+
+
+.showbtn{
+    color: white;
+    height: 1.5rem;
+    width: 7rem;
+    border: 7px;
+    background-color: orange;
+}
+
+
+.databtn{
+    color: white;
+    height: 1.5rem;
+    width: 7rem;
+    border: 7px;
+    margin-left: 7rem;
+    background-color: red;
+}
+
+.details_div{
+    height: 80vh;
+    width: 27vw;
+    background-color: whitesmoke;
+}
+
+.show_para{
+    height: 4vh;
+    width: 94%;
+    padding: 0.7rem;
+    background-color: blueviolet;
+}

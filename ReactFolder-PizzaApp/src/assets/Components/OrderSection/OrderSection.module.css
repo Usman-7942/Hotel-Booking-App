@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background: url("https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.95;
+}
+
+.container p{
+    color: #ffffff;
+    font-size: 60px;
+    text-shadow: 0px 2px 12px rgba(0,0,0,0.7);
+}
+
+/* only fix span visibility (no background) */
+span{
+    font-size: 70px;
+    background: transparent;
+}
+
+/* second paragraph slightly softer */
+.container p:nth-child(2){
+    font-size: 28px;
+    color: #f1f1f1;
+}
+
+/* button upgraded color for pizza theme */
+button{
+    color: white;
+    font-size: 35px;
+    padding: 7px 25px;
+    margin-top: 31px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right, #ff512f, #f09819);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background: linear-gradient(to right, #ff6a4d, #f5a623);
+    transform: scale(1.05);
+}

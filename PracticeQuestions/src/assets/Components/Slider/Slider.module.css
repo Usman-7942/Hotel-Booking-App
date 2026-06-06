@@ -1,0 +1,49 @@
+.card_wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: blue;
+}
+
+.card_section{
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    gap: 0.7rem;
+    margin-left: 2rem;
+    background-color: brown;
+}
+
+.card{
+    height: 100%;
+    width: 20vw;
+    flex: 0 0 auto;
+    background-color: blueviolet;
+}
+
+.prevbtn{
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: grey;
+    top: 40%;
+    left: 7px;
+    z-index: 2;
+    border: 1px solid grey;
+}
+
+.nextbtn{
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: grey;
+    top: 40%;
+    right: 7px;
+    z-index: 2;
+    border: 1px solid grey;
+}

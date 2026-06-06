@@ -1,0 +1,60 @@
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 40px 8%;
+
+  flex-wrap: wrap;
+}
+
+/* CARD */
+
+.card {
+  flex: 1;
+  min-width: 90px;
+
+  background: var(--card-color);
+
+  padding: 15px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* TEXT */
+
+.card h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-weight: bold;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .forecast {
+    justify-content: center;
+  }
+
+  .card {
+    min-width: 120px;
+  }
+}

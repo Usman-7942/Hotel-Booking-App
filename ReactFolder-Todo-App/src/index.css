@@ -1,0 +1,90 @@
+* {
+    color:grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+}
+
+
+.container{
+  width: 600px;
+  height: 600px;
+  border: solid grey 4px;
+  border-radius: 4px;
+}
+
+.header{
+  margin: -20px;
+}
+
+
+h2, p{
+  text-align: center;
+}
+
+
+
+p{
+  font-size: 35px;
+}
+
+
+.delete_btn{
+  color: white;
+  background-color: rgb(246, 10, 10);
+  width: 38px;
+  height: 38px;
+  margin-right: 60px;
+  border: none;
+  border-radius: 20px;
+}
+
+
+.input_div, .task{
+  display: flex;
+  justify-content:space-around;
+}
+
+
+.input_box{
+    padding: 8px;
+    width: 310px;
+    background-color: black;
+    border: none;
+}
+
+
+.add_btn{
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(246, 10, 10);
+}
+
+
+.checkbox_btn{
+  transform: scale(2);
+}
+
+
+
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task_left {
+  display: flex;
+  align-items: center;
+  margin-left: 17px;
+  gap: 20px; /* controls checkbox ↔ text spacing */
+}
