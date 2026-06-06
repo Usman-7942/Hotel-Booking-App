@@ -1,0 +1,334 @@
+.featuresection_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300vh;
+  width: 100%;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+}
+
+.heading{
+  font-size: 2rem;
+}
+
+.search_box{
+  height: 2rem;
+  width: 31vw;
+  color: black;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 2rem;
+}
+
+.search_box::placeholder{
+  color: #111;
+}
+
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20vh;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  margin-bottom: 1.5rem;
+}
+
+.card_section{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 2rem;
+}
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 31vw;
+  border-radius: 15px;
+  margin-left: 1.5rem;
+  overflow: hidden;
+  flex: 0 0 auto;
+  transition: all 0.3 ease;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.7);
+}
+
+.card:hover{
+  transform: scale(1.1);
+
+}
+
+
+
+
+.prodimage_div{
+    height: 50%;
+    width: 100%;
+    background-color: orange;
+}
+
+.prodimage_div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.prodinfo_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+
+.prodinfo_div .btn{
+    display: flex;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+
+.btn_location,
+.btn_reviews,
+.btn_para{
+    font-size: 17px;
+    padding-left: 13px;
+    color: black;
+}
+
+
+
+.wishlist_div,
+.addtocart_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+
+
+
+
+.result{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    background-color: orangered;
+}
+
+.confirm_message{
+    font-size: 15px;
+    color: black;
+}
+
+
+.buttons_div{
+    display: flex;
+    gap: 15px;
+}
+
+.yesbtn{
+    color: white;
+    background-color: rgb(14, 194, 14);
+    border: none;
+    border-radius: 50%;
+}
+
+.nobtn{
+    color: white;
+    background-color: rgb(226, 14, 14);
+     border: none;
+    border-radius: 50%;
+}
+
+
+.addtocartbtn{
+    height: 90%;
+    width: 90%;
+    font-size: 17px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(237, 25, 25);
+}
+
+.addtocartbtn:hover{
+    background-color: rgb(243, 45, 45);
+}
+
+.wishlistbtn{
+    height: 90%;
+    width: 90%;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: orange;
+}
+
+.wishlistbtn:hover{
+    background-color: rgb(246, 171, 33);
+}
+
+
+.wishlistbtn svg{
+    color: red;
+    fill: red;
+    font-size: 17px;
+    padding-right: 0.2rem;
+}
+
+.wishlistbtn:hover svg{
+    scale: (1.1);
+}
+
+
+.prevbtn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 1.5rem;
+    font-size: 2.6rem;
+    top: 40%;
+    left: 1.5rem;
+    z-index: 7;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.15);
+}
+
+.prevbtn:hover{
+    background-color: rgb(242, 23, 23);
+}
+
+.nextbtn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 1.5rem;
+    font-size: 2.6rem;
+    z-index: 7;
+    top: 40%;
+    right: 1.5rem;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.15);
+}
+
+
+.nextbtn:hover{
+    background-color: rgb(242, 23, 23);
+}
+
+
+
+.details_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4%;
+    height: 150vh;
+    width: 70%;
+    margin-top: 3.5rem;
+    margin-bottom: 6rem;
+    padding: 4rem;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.9);
+}
+
+.details_container h2{
+    font-size: 2rem;
+}
+
+.details_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 80%;
+    object-fit: cover;
+}
+
+.details_image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.no_image{
+    font-size: 2rem;
+}
+
+
+.details_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 80%;
+    gap: 7vw;
+    background-color: white;
+}
+
+.details_info span{
+    color:#111;
+    margin-left: 1.5rem;
+    width: 31vw;
+}
+
+
+
+.btns_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 80%;
+    margin-top: 2rem;
+    gap: 7rem;
+}
+
+.removebtn{
+    padding: 0.9rem 1.7rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.7rem;
+    color: white;
+    background-color: rgb(233, 19, 19);
+
+}
+
+
+.bookbtn{
+    padding: 0.9rem 1.7rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.7rem;
+    color: white;
+    background-color:#4f46e5;
+}

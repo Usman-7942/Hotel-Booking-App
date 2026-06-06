@@ -1,0 +1,9 @@
+* {
+    color: rgb(225, 225, 225);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body{
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+}

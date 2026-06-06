@@ -1,0 +1,102 @@
+.hero_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 100%;
+      background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.para1{
+    font-size: 3.1rem;
+    margin-bottom: 0;
+}
+
+.para2{
+    margin-top: 0;
+    margin-bottom: 4.9rem;
+    font-size: 1.5rem;
+}
+
+.section_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 60%;
+    padding: 7px;
+    border-radius: 0.7rem;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.input_box{
+    height: 2rem;
+    padding: 7px;
+    margin-right: 0.9rem;
+    border: none;
+    outline: none;
+    border-radius: 0.7rem;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    background: rgba(255, 255, 255, 0.9);
+    color: #111;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+
+.input_box:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.4);
+}
+
+.input_box::placeholder{
+    color: #111;
+}
+
+select{
+    height: 3rem;
+    padding: 7px;
+    font-size: 0.9rem;
+    color:#111;
+    border: none;
+    outline: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+}
+
+
+.searchbtn{
+    height: 3rem;
+    margin-left: 0.9rem;
+    padding: 0 1.7rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.7rem;
+    background: linear-gradient(135deg, #4f46e5, #06b6d4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.searchbtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+}
