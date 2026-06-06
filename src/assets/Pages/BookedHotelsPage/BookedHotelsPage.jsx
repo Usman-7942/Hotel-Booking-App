@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./BookedHotelsPage.module.css";
-import Navbar from "../../Navbar/Navbar";
-import Footer from "../../Footer/Footer";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const BookedHotelsPage = () => {
   const current_user = JSON.parse(localStorage.getItem("current_user"));

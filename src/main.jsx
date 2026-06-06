@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from "react-router-dom"
-import { HotelProvider } from './assets/Components/Pages/ContextApi/ContextApi.jsx'
+import { HotelProvider } from './assets/Pages/ContextApi/ContextApi.jsx'
 import './index.css'
 import App from './App.jsx'
 

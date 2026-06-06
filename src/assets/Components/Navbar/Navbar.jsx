@@ -22,7 +22,9 @@ const Navbar = () => {
             <div className={styles.btn}
             onClick={() => navigate("/bookedhotelspage")}
             >Booked Hotels</div>
-            <div className={styles.btn}>Dark Mode 🌙</div>
+            <div className={styles.btn}
+            onClick={() => navigate("/about")}
+            >About</div>
         </div>
 
 

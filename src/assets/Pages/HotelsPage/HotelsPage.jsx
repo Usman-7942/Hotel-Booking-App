@@ -2,8 +2,8 @@ import React,{ useContext, useState } from 'react'
 import styles from "./HotelsPage.module.css"
 import { HotelContext } from '../ContextApi/ContextApi';
 import { FaHeart } from "react-icons/fa";
-import Navbar from '../../Navbar/Navbar';
-import Footer from '../../Footer/Footer';
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 const HotelsPage = () => {
 
     const { addtobookedhotels } = useContext( HotelContext );

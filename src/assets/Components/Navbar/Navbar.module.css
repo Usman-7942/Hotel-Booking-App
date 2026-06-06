@@ -4,6 +4,7 @@
     align-items: center;
     height: 7rem;
     width: 100%;
+    border-bottom: 2px solid grey;
     background: linear-gradient(90deg, #4f46e5, #7c3aed);
 }
 
